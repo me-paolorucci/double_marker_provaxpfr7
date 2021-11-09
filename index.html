@@ -9,7 +9,7 @@
             AFRAME.registerComponent('videohandler', {
                 init: function () {
                     var marker = this.el;
-                    this.vid = document.querySelector(".video");
+                    this.vid = document.querySelector("#vid");
 
                     marker.addEventListener('markerFound', function () {
                         this.toggle = true;
@@ -36,7 +36,6 @@
         >
             <a-assets>
                 <video
-                    class="video"
                     id="vid"
                     src="assets/asset.mp4"
                     preload="auto"
@@ -69,7 +68,7 @@
                     scale="1 1 1"
                     position="0 0.1 0"
                     rotation="-90 0 0"
-                    class="clickable video"
+                    class="clickable"
                     gesture-handler
                 ></a-video>
             </a-marker>
