@@ -12,7 +12,7 @@
                 }
                 init: function () {
                     var marker = this.el;
-                    this.vid = document.querySelector("#vid");
+                    this.vid = document.querySelector(".myvideo");
 
                     marker.addEventListener('markerFound', function () {
                         this.toggle = true;
@@ -41,7 +41,8 @@
             <!--video1-->
             <a-assets>
                 <video
-                    id="vid"
+                    id="one"
+                    class="myvideo"
                     src="assets/asset.mp4"
                     preload="auto"
                     response-type="arraybuffer"
@@ -69,7 +70,7 @@
                 id="markerA"
             >
                 <a-video
-                    src="#vid"
+                    src="#one"
                     scale="1 1 1"
                     position="0 0.1 0"
                     rotation="-90 0 0"
@@ -81,7 +82,8 @@
             <!--video2-->
             <a-assets>
                 <video
-                    id="vid"
+                    id="two"
+                    class="myvideo"
                     src="assets/video1.mp4"
                     preload="auto"
                     response-type="arraybuffer"
@@ -109,7 +111,7 @@
                 id="markerA"
             >
                 <a-video
-                    src="#vid"
+                    src="#two"
                     scale="1 1 1"
                     position="0 0.1 0"
                     rotation="-90 0 0"
